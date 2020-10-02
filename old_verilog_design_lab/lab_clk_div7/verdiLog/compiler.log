@@ -1,0 +1,10 @@
+*design* DebussyLib (btIdent Verdi3_K-2015.09-SP1-1)
+Command arguments:
+    +define+verilog
+    /home/IC/lab/my_lab/test_top.v
+    /home/IC/lab/my_lab/clk_div7.v
+
+Highest level modules:
+test_top
+
+Total	0 error(s),   0 warning(s)

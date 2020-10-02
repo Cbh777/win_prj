@@ -1,0 +1,49 @@
+verdiDockWidgetDisplay -dock widgetDock_WelcomePage
+verdiWindowResize -win $_Verdi_1 -2 "25" "1920" "1004"
+verdiWindowWorkMode -win $_Verdi_1 -hardwareDebug
+debImport "/home/IC/lab/my_lab/test_top.v" "/home/IC/lab/my_lab/clk_div7.v" -path \
+          {/home/IC/lab/my_lab}
+wvCreateWindow
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvOpenFile -win $_nWave2 {/home/IC/lab/my_lab/clk_div7.fsdb}
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {3 6 4 1 2 1} -backward
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {3 6 4 1 2 1} -backward
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -win $_nTrace1 -range {3 6 3 1 5 1} -backward
+wvAddSignal -win $_nWave2 "/test_top/CLK" "/test_top/RST" "/test_top/CLK_OUT"
+wvSetPosition -win $_nWave2 {("G1" 0)}
+wvSetPosition -win $_nWave2 {("G1" 3)}
+wvSetPosition -win $_nWave2 {("G1" 3)}
+wvSetCursor -win $_nWave2 1297402.539040 -snap {("G2" 0)}
+srcDeselectAll -win $_nTrace1
+verdiWindowResize -win $_Verdi_1 "510" "190" "900" "700"
+verdiWindowResize -win $_Verdi_1 -2 "25" "1920" "1004"
+debReload
+wvZoom -win $_nWave2 0.000000 1688960.962984
+wvZoom -win $_nWave2 0.000000 550939.261494
+srcDeselectAll -win $_nTrace1
+srcHBSelect "test_top.dut" -win $_nTrace1
+srcHBSelect "test_top.dut" -win $_nTrace1
+srcSetScope -win $_nTrace1 "test_top.dut" -delim "."
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "cnt_pos" -win $_nTrace1
+srcAddSelectedToWave -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+debReload
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoomOut -win $_nWave2
+wvZoom -win $_nWave2 0.000000 15295017.091794
+wvZoom -win $_nWave2 0.000000 3202311.270809
+wvZoom -win $_nWave2 0.000000 813079.611270
+srcDeselectAll -win $_nTrace1

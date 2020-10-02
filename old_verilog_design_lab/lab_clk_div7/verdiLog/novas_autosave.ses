@@ -1,0 +1,68 @@
+@verdi rc file Version 1.0
+[General]
+VerdiVersion = Verdi3_K-2015.09-SP1-1
+[KeyNote]
+Line1 = Automatic Backup 0
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+[Verdi_1]
+workMode = hardwareDebug
+[hb]
+postSimFile = /home/IC/lab/my_lab/clk_div7.fsdb
+syncTime = 80000
+viewport = 378 261 970 271 319 1 253 1918
+activeNode = "test_top.dut"
+activeScope = "test_top.dut"
+activeFile = "/home/IC/lab/my_lab/clk_div7.v"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 29
+baMode = False
+srcLineNum = True
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "test_top.dut"
+sdfCheckUndef = FALSE
+[hb.sourceTab.1]
+scope = test_top.dut
+File = /home/IC/lab/my_lab/clk_div7.v
+Line = 30
+[imp.design1]
+dbEnum =  oh
+invokeDir = /home/IC/lab/my_lab
+design = DebussyLib
+hostCommand = hostCommand /home/IC/lab/my_lab/test_top.v /home/IC/lab/my_lab/clk_div7.v
+[nMemoryManager]
+FsdbFile = /home/IC/lab/my_lab/clk_div7.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 28 970 81 100 65
+SessionFile = /home/IC/lab/my_lab/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSync = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE
